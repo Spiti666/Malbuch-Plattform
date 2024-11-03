@@ -1,0 +1,141 @@
+body {
+    font-family: 'Comic Sans MS', sans-serif; /* Benutzerdefinierte Schriftart */
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Platz für das Logo und Navigation */
+    align-items: center; /* Vertikal zentrieren */
+    background-color: #ffcfda;
+    padding: 15px 30px; /* Mehr horizontaler Abstand */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.5s ease-in-out; /* Sanfte Animation beim Scrollen */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav {
+    flex-grow: 1; /* Erlaubt mehr Flexibilität */
+    display: flex;
+    justify-content: center; /* Menü mittig ausrichten */
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px; /* Mehr Abstand zwischen den Links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px; /* Größere Schrift */
+    transition: color 0.3s; /* Farbänderung bei Hover */
+}
+
+.nav a:hover {
+    color: #ff6699; /* Akzentfarbe bei Hover */
+}
+
+.hero-section {
+    margin-top: 100px; /* Platz für den Header */
+    padding: 40px;
+    text-align: center;
+    background-color: #ffe3e3;
+}
+
+.details-section, .about-section, .contact-section, .blog-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #ff6699;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.blog-post a:hover {
+    color: #cc3366;
+}
+
+.gallery-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.gallery-item {
+    text-align: center; /* Zentrierter Text unter den Bildern */
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #ffcfda;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media-links a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.social-media-links a:hover {
+    color: #ff6699;
+}
